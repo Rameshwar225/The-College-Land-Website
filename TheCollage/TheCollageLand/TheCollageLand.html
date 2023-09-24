@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TheCollageLand.com</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+	<div class="wrapper">
+		<nav class="navbar">
+			<img class="logo" src="logo.png">
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#Services">Services</a></li>
+				<li><a href="#contact ">Contact</a></li>
+				<li><a href="#contact">Feedback</a></li>
+			</ul>
+		</nav>
+		<!-- this javascript for add and  remove active class from the navigation bar -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+		<script>
+			$(document).ready(function () {
+				$('ul li a').click(function () {
+					$('li a').removeClass("active");
+					$(this).addClass("active");
+				});
+			});  
+		</script>
+		
+		<div class="center">
+			<h1>Welcome To TheCollageLand</h1>
+			<h2>Make Your career Bright</h2>
+			<div class="buttons">
+				<button> <a href="form.html"> Explore More </a></button>
+				<button class="btn2"><a href="#contact">Subscribe Us</a></button>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- this is for about setion -->
+	<a name="about">
+		<div class="section">
+			<div class="container">
+				<div class="content-section">
+					<div class="title">
+						<h1>About Us</h1>
+					</div>
+					<div class="content">
+						<h3>Hello everyone,</h3>
+						<p>Our young generation often faces the delimma of which career to choose And even if some
+							students
+							are sure about what they want to do in life, The students often get confused where to apply
+							for
+							higherstudies since their are numerous options. <br>
+							Time is precious, hence to save the time of parents and students. Our team has created a
+							website
+							where students can find several Course and Colleges at one place according to their
+							preference
+							within just few minutes. <br>
+							The students just has to enter some Information about themselves and they can get a good
+							number
+							of colleges recommended for them on our site. <br>
+							so our team [Nikita Rasal and Rameshwar Gosavi] Welcomes every one to give our site a chance
+							&
+							to find an appealing college for you. <br><br><br> <strong>ThankYou!!!</strong>
+
+						</p>
+						<div class="button1">
+							<a href="">Read More</a>
+						</div>
+					</div>
+					<div class="social">
+						<a href=""><i class="fab fa-facebook-f"></i></a>
+						<a href=""><i class="fab fa-twitter"></i></a>
+						<a href=""><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="image-section">
+					<img src="image/img one.jpg">
+				</div>
+			</div>
+		</div>
+	</a>
+
+	<!-- this is for contact form -->
+        
+	<br><br>
+	<a name="contact">
+		<div class="cont">
+			<div class="contp">
+				<div class="contc c1">
+					<p>
+						<i class="fas fa-map-marker-alt"></i>Address <br>
+						<span>SVPM COE,Malegaon <br>
+							Nira Road, Baramati</span>
+					</p>
+					<p>
+						<i class="fas fa-phone-alt"></i> Let's Talk <br>
+						<span>+91 9665776869 <br>
+							+91 7744049692</span>
+					</p>
+					<p>
+						<i class="far fa-envelope"></i> Genaral Support <br>
+						<span> nikita@gmail.com <br> ram@gmail.com</span>
+					</p>
+
+
+				</div>
+				<div class="contc c2">
+					<div class="ic">
+						<h2>Contact us</h2>
+						<h3>
+							<span id="Confirm"></span>
+						</h3>
+
+						<p>Name *</p>
+						<input id="txt_name" type="text" Required="Required">
+
+						<p>Email *</p>
+						<input id="txt_email" type="text" required="required">
+
+						<p>Phone *</p>
+						<input id="txt_phone" type="text" Required="required">
+
+						<p>Subject *</p>
+						<input id="txt_subject" type="text" Required="required">
+
+						<p>Message *</p>
+						<textarea id="txt_message" name="" cols="20" rows="4" Required="required"></textarea>
+
+						<input type="submit" value="SEND" id="btn_send">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</body>
+
+</html>
